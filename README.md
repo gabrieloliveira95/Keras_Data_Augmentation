@@ -25,6 +25,28 @@ The output format is:
 
 <output_folder>/image<number>.jpg
 
+# Example
+
+- After install Tensorflow Library:
+
+## Using 1 image to generate 10
+
+python data_augmentation.py -i /home/gabrieloliveira/images -o /home/gabrieloliveira/images_output -t 10
+
+### Result 
+
+![Lena-10](https://github.com/gabrieloliveira95/Keras_Image_Augmentation/blob/main/example/output-10.jpg?raw=true)
+
+## Using 1 image to generate 100
+
+python data_augmentation.py -i /home/gabrieloliveira/images -o /home/gabrieloliveira/images_output -t 100
+
+### Result 
+
+![Lena-10](https://github.com/gabrieloliveira95/Keras_Image_Augmentation/blob/main/example/output-100.jpg?raw=true)
+
+
+
 # Required tools
 
 [python 3.8](https://www.python.org/download/releases/3.8/)
@@ -34,3 +56,4 @@ The output format is:
 [numpy](https://pypi.python.org/pypi/numpy)
 
 [pillow 8.1.0](https://pypi.org/project/Pillow/8.1.0/)
+
