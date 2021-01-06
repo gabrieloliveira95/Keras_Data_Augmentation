@@ -27,7 +27,7 @@ The output format is:
 
 # Example
 
-- After install Tensorflow Library:
+- After install [Required tools](https://github.com/gabrieloliveira95/Keras_Image_Augmentation#required-tools):
 
 ## Using 1 image to generate 10
 
