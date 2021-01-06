@@ -29,6 +29,10 @@ The output format is:
 
 - After install [Required tools](https://github.com/gabrieloliveira95/Keras_Image_Augmentation#required-tools):
 
+## Original Image
+
+![Lena](https://github.com/gabrieloliveira95/Keras_Image_Augmentation/blob/main/example/lena.jpg?raw=true)
+
 ## Using 1 image to generate 10
 
 `python data_augmentation.py -i /home/gabrieloliveira/images -o /home/gabrieloliveira/images_output -t 10`
