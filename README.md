@@ -1,4 +1,4 @@
-# Keras Data Augmentation Generator
+# Keras Image Augmentation Generator
 
 Data augmentation techniques are used a lot to increase the size of the dataset by performing rotations, transformations, zooming, flipping, etc.
 
