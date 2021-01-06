@@ -33,15 +33,15 @@ The output format is:
 
 ![Lena](https://github.com/gabrieloliveira95/Keras_Image_Augmentation/blob/main/example/lena.jpg?raw=true)
 
-## Using 1 image to generate 10
+## Using 1 image to generate 9 images
 
-`python data_augmentation.py -i /home/gabrieloliveira/images -o /home/gabrieloliveira/images_output -t 10`
+`python data_augmentation.py -i /home/gabrieloliveira/images -o /home/gabrieloliveira/images_output -t 9`
 
 ### Result 
 
-![Lena-10](https://github.com/gabrieloliveira95/Keras_Image_Augmentation/blob/main/example/output-10.jpg?raw=true)
+![Lena-10](https://github.com/gabrieloliveira95/Keras_Image_Augmentation/blob/main/example/output-9.jpg?raw=true)
 
-## Using 1 image to generate 100
+## Using 1 image to generate 100 images
 
 `python data_augmentation.py -i /home/gabrieloliveira/images -o /home/gabrieloliveira/images_output -t 100`
 
