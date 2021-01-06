@@ -16,8 +16,7 @@ def imageGenerator(index, image, args, totalImages):
     image = img_to_array(image)
     image = np.expand_dims(image, axis=0)
 
-    # Image generator for data augmentation
-    # Initialize the total number of images generated thus far
+    # Initialize Generator Parameters
     aug = ImageDataGenerator(
         rotation_range=30,
         zoom_range=0.15,
@@ -32,7 +31,6 @@ def imageGenerator(index, image, args, totalImages):
     imageGen = aug.flow(image, batch_size=1, save_to_dir=args["output"],
                         save_prefix="image", save_format="jpg")
 
-    imageGen
     for i, image in enumerate(imageGen):
         if i == args["total"]:
             break
@@ -51,8 +49,7 @@ if __name__ == "__main__":
     args = vars(ap.parse_args())
 
     if args["total"] < 0:
-        # Invalid Argument
-        print('Invalid Argument ', args["total"])
+        print('Invalid Argument ', args["total"])  # Invalid Argument
         exit(22)
 
     # Read Images and store in a list
@@ -65,14 +62,13 @@ if __name__ == "__main__":
             raise Exception('No JPG Images in Intput Folder')
     except Exception as e:
         print(e)
-        # No such file or directory 2
-        exit(2)
+        exit(2)  # No such file or directory 2
 
     # Create Output Path
     if not os.path.exists(args["output"]):
         os.makedirs(args["output"])
         print(f'Created Output Folder in --> {args["output"]}')
 
-    for i, images in enumerate(imagesPath):
-        imageGenerator(index=i+1, image=images, args=args,
+    for i, image in enumerate(imagesPath):
+        imageGenerator(index=i+1, image=image, args=args,
                        totalImages=len(imagesPath))
