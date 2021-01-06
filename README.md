@@ -31,7 +31,7 @@ The output format is:
 
 ## Using 1 image to generate 10
 
-python data_augmentation.py -i /home/gabrieloliveira/images -o /home/gabrieloliveira/images_output -t 10
+`python data_augmentation.py -i /home/gabrieloliveira/images -o /home/gabrieloliveira/images_output -t 10`
 
 ### Result 
 
@@ -39,7 +39,7 @@ python data_augmentation.py -i /home/gabrieloliveira/images -o /home/gabrieloliv
 
 ## Using 1 image to generate 100
 
-python data_augmentation.py -i /home/gabrieloliveira/images -o /home/gabrieloliveira/images_output -t 100
+`python data_augmentation.py -i /home/gabrieloliveira/images -o /home/gabrieloliveira/images_output -t 100`
 
 ### Result 
 
